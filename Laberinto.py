@@ -1,11 +1,4 @@
-#matriz = [list(linea)[-1] for linea in open("archivo.txt").readlines()]
-matriz = [["y", 1, 1, 0],
-          [ 0, 1, 0, 0 ],
-          [ 1, 0, 1, 0 ],
-          [ 1, 1, 0, 0 ],
-          [ 0, 0, 0, 1 ],
-          [ 0, 1,"x", 0]
-          ];
+matriz = [list(linea)[-1] for linea in open("Laberinto.txt").readlines()]
 
 class Nodo():
     def __init__(self,valor,posicion,hijos=[]):
