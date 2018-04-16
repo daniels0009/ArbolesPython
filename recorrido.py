@@ -1,5 +1,6 @@
 class Nodo():
-    def __init__(self, valor, izq = None, der = None):
+     izq , der, dato = None, None, 0
+    def __init__(self, valor):
         self.valor= valor
         self.izquierda = izq
         self.derecha=der
