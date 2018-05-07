@@ -55,14 +55,12 @@ def imprimir(arbol):
             for i in arbol.hijos:
                 imprimir(i)     
 
-def buscarX(lista):
-   for x in lista:
+def buscarX(laberinto):
+   for x in laberinto:
        for y in range(len(x)):
            if x[y] == "x":
-               colocarArbol(lista.index(x),y) 
-
-raiz=Nodo(0,0,[])
-arbol=Nodo(0,0,[])
+               colocarArbol(laberinto.index(x),y,laberinto, Nodo(0,0,[])) 
+                
 def colocarArbol(x,y):
         raiz.setPosicion((x,y))
         arbol.setPosicion((x,y))
